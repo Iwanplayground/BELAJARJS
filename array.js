@@ -18,3 +18,4 @@ console.log(buah);
 // kalo ndatau jumlah indexnya? yaudah pake push aja
 buah.push("Stroberi", "Semangka", "Melon");
 console.log(buah);
+// mghapus juga mirip kita bisa pake delete(ini klo pake index) or make pop><push
