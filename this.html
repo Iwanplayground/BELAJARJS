@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Belajar Objek Javascript</title>
+
+    <script>
+      /*
+
+      var person = {
+        firstName: "Ridwan",
+        lastName: "Akmal",
+        showName: function () {
+          alert(`Nama: ${this.firstName} ${this.lastName}`);
+        },
+      };
+
+      person.showName();
+
+      */
+      // oiya kita off in aja dulu ini atasnya
+      //Kata kunci this pada contoh di atas akan mengacu pada objek person.
+
+      console.log("");
+      // buat objek dg this
+      var person = {
+        firstName: "Ridwan",
+        lastName: "Akmal",
+        showName: function () {
+          alert(`Nama: ${this.firstName} ${this.lastName}`);
+        },
+      };
+
+      var person2 = {
+        firstName: "Bisam",
+        lastName: "Soek",
+        showName: function () {
+          alert(`Nama: ${this.firstName} ${this.lastName}`);
+        },
+      };
+      person2.showName();
+    </script>
+  </head>
+  <body></body>
+</html>
