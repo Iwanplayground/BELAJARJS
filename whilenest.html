@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinau loop tjuy</title>
+  </head>
+  <body>
+    <script>
+      var ulangi = confirm("Apakah kamu mau mengulang laman ini?");
+      var i = 0;
+
+      while (ulangi) {
+        i++;
+        ulangi = confirm("Apakah kamu mau mengulang laman ini?");
+      }
+
+      document.write("<h2>Perulangan laman telah dilakukan sebanyak " + i + " kali</h2>");
+
+      // skarang bagian yang bersarang
+      for (let i = 1; i < 8; i++) {
+        for (let j = 1; j < 5; j++) {
+          document.write("<p> perulangan ke " + i + "," + j + "</p>");
+        }
+      }
+    </script>
+  </body>
+</html>
