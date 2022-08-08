@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 2 JS</title>
+  </head>
+  <body>
+    <img src="https://www.pngkey.com/png/full/15-152264_png-astronot-kartun.png" width="300" />
+    <div id="box1">
+      <div id="p1">Paragraf 1</div>
+    </div>
+    <script>
+      //---------EDIT HTML-----------
+      var el = document.createElement("h2");
+      var text = document.createTextNode("Belajar fisika onlen gaes");
+      var box = document.getElementById("box1");
+
+      el.appendChild(text);
+      box.appendChild(el);
+
+      //mghapus cara(utk hapus tinggal cari parentnya tau indexnya habis itu dihapus)
+      //box.removeChild(el);
+
+      // mengeditnya
+      var el2 = document.createElement("h3");
+      var text2 = document.createTextNode("Belajarnya besok aja pas dah maok ujian.");
+      el2.appendChild(text2);
+      var p1 = document.getElementById("p1");
+
+      box.replaceChild(el2, p1);
+    </script>
+  </body>
+</html>
