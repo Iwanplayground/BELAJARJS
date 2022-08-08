@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .merah {
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>belajar dom 3</h1>
+    <img src="https://www.pngkey.com/png/full/15-152264_png-astronot-kartun.png" width="300" id="gambar" />
+    <input type="text" value="nama" id="input" />
+    <script>
+      var img = document.getElementById("gambar");
+      img.width = 400;
+
+      var input = document.getElementById("input");
+      input.value = "nama lengkap";
+
+      img.className = "merah";
+      input.style.border = "3px solid red";
+    </script>
+  </body>
+</html>

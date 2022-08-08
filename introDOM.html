@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM awal js</title>
+  </head>
+  <body>
+    <h1>Belajar DOM javascript</h1>
+    <img src="https://miro.medium.com/max/1104/1*mudAgBfBxHH5IoEd6c3rLA.png" width="300" />
+
+    <div id="box1"></div>
+
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JQUERY</li>
+    </ul>
+
+    <script>
+      //selector
+      var boxes = document.getElementsByClassName("boxes");
+      document.getElementById("box1").innerHTML = "Sekolah Kuda";
+      // (ini repot kita buat var aja)document.getElementsByClassName("boxes")[0].innerHTML = "versi terupdate";
+      boxes[0].innerHTML = "versi terbaru kita";
+      document.getElementsByTagName("li")[0].innerHTML = "konten kuda";
+      // mau gampang ya tinggal dibuat var aja utk tag name
+    </script>
+  </body>
+</html>
